@@ -10,6 +10,9 @@ public:
 	~Circuit();
 
 	std::vector<Address> mRouters;
+	std::vector<uint64_t> mKeys;
+	std::vector<int> mMessageCounts;
+
 	uint64_t mID;
 
 	Address mDestination;

@@ -18,6 +18,7 @@ public:
 	void ReceiveHand(std::string p, Address a);
 	Address GetAddress();
 
+	void Test();
 
 private:
 
@@ -26,6 +27,8 @@ private:
 
 	Circuit CreateCurcuit(Address destination);
 
+	std::string Encrypt(std::string&, Circuit&);
+	std::string Decrypt(std::string&, Circuit&);
 
 	unsigned int mCurcuitLength;
 	Address mDirectory;
